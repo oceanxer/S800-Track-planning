@@ -1,0 +1,22 @@
+thruster_coeffs: [1.0, 1.0, 0.0, 0.0, 0.0, 0.0,
+                  0.0, 0.0, 0.0, 0.0, 0.999, 0.99999,
+                  0.0, 0.0, 0.99999, 0.999999, 0.0, 0.0,
+                  0.0, 0.0, -0.0012686999, -0.00126869999, -0.19037999, 0.1776237,
+                  0.0063762, 0.0063762, -0.1826799, 0.2553200, 0.0, 0.0,
+                  0.27527, -0.27273000, 0.0, 0.0, -0.036321, -0.036321226]
+thruster: 
+  max_force: 50 #N
+  #for Thrust2PWM  default is type0
+  THRUST_TYPE: [0, 0, 0, 0, 0, 0, 0, 0]
+  MIN_THRUST: 0.200000
+  STARTUP_THRUST: 1.500000
+  SU_THRUST:
+    POS_SLOPE: 22.500000 #forward
+    POS_YINT: 1523
+    NEG_SLOPE: 28.600000  #backword
+    NEG_YINT: 1480
+  THRUST:
+    POS_SLOPE: 6.66
+    POS_YINT: 1552
+    NEG_SLOPE: 8.54
+    NEG_YINT: 1444
