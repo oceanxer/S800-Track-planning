@@ -196,7 +196,7 @@ def S800_ThrustAllocation(torque, config_file):
        :return: 分配的8个推进器的推力,4x1矩阵
     """
     # torque2thrusterforce
-    thruster_coeffs = np.array(config_file["thruster_coeffs"]).reshape(6,8)
+    thruster_coeffs = np.array(config_file["thruster_coeffs"]).reshape(6,8).transpose()
     forces = np.linalg.pinv(thruster_coeffs)*torque
     #force to PWM
     pwm_values = []
